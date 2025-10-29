@@ -1,0 +1,69 @@
+body{
+    background-color: #33efad;
+    
+}
+.gameBox{
+    width: 60vw;
+    height: 60vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 100px 100px 100px;
+    gap: 1.5vmin;
+    margin-top: 10px;
+}
+.container{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    width: 100px;
+    height: 100px;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 0 2rem rgba(0,0,0,0.5);
+    background-color: #f89696;
+    color: white;
+    font-size:xx-large;
+}
+#msg{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(53, 53, 54);
+}
+.msg-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100px;
+    animation: winner 2s linear 0s 1 forwards ;
+}
+@keyframes winner {
+    from{
+        transform: translateY(10px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+.hide{
+    display: none;
+}
+.gameMode{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.resetGame ,.newGame{
+    width: 120px;
+    height: 60px;
+    border: 1px ;
+    border-radius: 10px;
+    background-color: #f4f763;
+    font-size: large;
+    box-shadow: 0 0 2rem rgba(0,0,0,0.5);
+}
